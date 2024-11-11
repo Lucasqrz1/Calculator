@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my calculator!</h1>
-    <p>This is a simple calculator with the basic operators as part of the "100 Days of code challenge by Dr. Angela Yu"..</p>
+    <div class="container">
+        <h1>Calculator Game</h1>
+        <form id="calc-form">
+            <input type="number" id="n1" placeholder="First number" required>
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" id="n2" placeholder="Second number" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <h2>Result: <span id="result"></span></h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
